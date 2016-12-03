@@ -21,6 +21,8 @@ description: >
 baseurl: ""
 url: ""
 
+permalink: /articles/:title
+
 # Build settings
 markdown: kramdown
 # theme: hagura-master
