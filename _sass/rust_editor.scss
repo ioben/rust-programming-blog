@@ -45,7 +45,8 @@ pre {
     word-break: break-all;
     word-wrap: break-word;
 }
-code {
+.rust-result {
+    font-size: 13px;
     padding: 0 2px;
     color: #8D1A38;
     white-space: pre-wrap;
