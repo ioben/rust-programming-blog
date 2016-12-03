@@ -5,6 +5,8 @@ title: What is Rust Anyway?
 
 Well Rust is awesome!  More specifically Rust is a safe, concurrent, systems language which boasts an impressive collection of so called zero-cost abstractions.
 
+<!--more-->
+
 Rust guarantees memory safety, but that shouldn't be a guarantee you take on faith.  To achieve this Rust has three powerful concepts, Ownership, Borrowing, and Lifetimes.
 
 Ownership is the concept of binding a variable to its scope.  When a variable is defined in a lexical scope, that variable is owned by its lexical scope.  When the scope is exited, the variable is automatically released, unless it was _moved_ to another lexical scope (which means it would no longer be available in the first scope).
