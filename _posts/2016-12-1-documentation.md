@@ -49,6 +49,9 @@ a binary will be created and can be run as a normal executable in the shell
 
 Cargo is Rust's Official package manager, and comes with the current stable release of Rust. 
 
+Cargo's Official website can be found at 
+	http://www.crates.io/
+
 According to Cargo's website, it "allows Rust projects to declare their various dependencies and ensure that you’ll always get a repeatable build."
 
 To start a binary program called "program" with cargo, use the command
@@ -62,3 +65,26 @@ Cargo keeps track of changes, and is similar to GNUs make utility. To build your
 	$ cargo build
 
 then you can run the binary just like you would had you manually used 	rustc to compile every file.
+
+Cargo can run unit or integration tests for your Rust build with the command
+
+	$ cargo test
+
+A test function is marked by the header `#[test]` Cargo's test output will be in the format
+
+	$ test [test name] ... [ok | FAILED]
+
+In most cases, a passing test is one in which the test does `panic!`. A test will only `panic!` if an assertion is not met. The assertion macro is denoted by the `assert!` keyword. 
+
+	#[test]
+	fn will_fail(){
+		assert!(1==2);
+	}
+
+This test will fail. If your acceptance test requires that your assertion will fail, then you use the `#[should_panic]` header.
+
+	#[test]
+	#[should_panic]
+	fn will_pass(){
+		assert!(1==2);
+	}
