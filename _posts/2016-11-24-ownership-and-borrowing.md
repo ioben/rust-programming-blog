@@ -22,8 +22,8 @@ fn main() {
 
     // Declarations are deallocated in reverse order
     // Vector is automatically deallocated, along with its heap
-    // inta is deallocated
     // intb is deallocated
+    // inta is deallocated
 }
 ```
 
