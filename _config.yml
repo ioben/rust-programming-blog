@@ -22,7 +22,7 @@ description: >
 baseurl: ""
 url: ""
 
-permalink: /articles/:title
+permalink: articles/:title
 
 # Build settings
 markdown: kramdown
