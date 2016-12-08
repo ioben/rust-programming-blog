@@ -1,6 +1,7 @@
 ---
-Layout: post
+layout: post
 title: Comparison
+date: 2016-01-01 12:07:00
 ---
 
 A comparison of Rust and other programming languages can be found in the table below.
@@ -13,6 +14,7 @@ A comparison of Rust and other programming languages can be found in the table b
 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
 .tg .tg-yw4l{vertical-align:top}
 </style>
+
 <table class="tg">
   <tr>
     <th class="tg-yw4l">Programming Language</th>
@@ -52,7 +54,7 @@ A comparison of Rust and other programming languages can be found in the table b
   </tr>
   <tr>
     <td class="tg-yw4l">Python</td>
-    <td class="tg-yw4l">Strong/Dynamic</td>
+    <td class="tg-yw4l">Week/Duck Typed</td>
     <td class="tg-yw4l">Interpreted</td>
     <td class="tg-yw4l">Object Oriented, imperative</td>
     <td class="tg-yw4l">1991</td>
