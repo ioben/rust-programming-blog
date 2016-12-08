@@ -1,6 +1,7 @@
 ---
 layout: post
 title: What is Rust Anyway?
+date: 2016-01-01 12:00:00
 ---
 
 Well Rust is awesome!  More specifically Rust is a safe, concurrent, systems language which boasts an impressive collection of so called zero-cost abstractions.
