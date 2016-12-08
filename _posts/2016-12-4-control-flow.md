@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Control Flow
+date: 2016-01-01 12:01:01
 ---
 
 Rust's control flow is similar to that of other languages.

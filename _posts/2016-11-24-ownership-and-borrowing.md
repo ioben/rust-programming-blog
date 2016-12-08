@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Ownership & Borrowing
+date: 2016-01-01 12:03:00
 ---
 
 One of the most interesting features of Rust is its ownership system.  In Rust, variables are owned by their binding; so when variable binding goes out of scope, the data the variable is bound to is, deterministically, deallocated.  This is how Rust is able to function without a garbage collector or explicit freeing of memory.

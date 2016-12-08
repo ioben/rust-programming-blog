@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# vi: set ft=sh
+set -x
+
+# Upload the site, and publish them into a public HTML directory
+
+REMOTE_SERVER="$1"
+REMOTE_DIRECTORY="$2"
+
+if [[ ! -f 'site.tar.gz' ]]; then
+    echo "No distributable found to deploy"
+    exit 5
+fi
+
+scp site.tar.gz $REMOTE_SERVER:$REMOTE_DIRECTORY/
+
+ssh $REMOTE_SERVER "cd $REMOTE_DIRECTORY; \
+    tar -xf site.tar.gz; \
+    rm site.tar.gz"

@@ -55,6 +55,7 @@ function createElements(code) {
 
 		//The result area
 		var resultArea = document.createElement("code");
+		resultArea.className = "rust-result";
 		resultArea.style.display = "none"; //Hide
 		code.parentNode.insertBefore(resultArea, code);
 

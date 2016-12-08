@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# vi: set ft=sh
+# Build and make an artifact of the website
+
+# Configure the subdirectory of the websites URI
+BASEDIR="$1"
+
+[[ -d "_site" ]] && rm -rf _site
+
+jekyll build --no-watch --baseurl "$BASEDIR"
+
+cd _site
+
+tar -cvzf site.tar.gz *
+
+mv site.tar.gz ../

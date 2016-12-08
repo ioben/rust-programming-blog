@@ -18,10 +18,11 @@ email: benjaminbarnett1@u.boisestate.edu
 description: >
     Rust is a powerful low-level, high performance language.  Learn what makes Rust a unique and
     useful language!
+
 baseurl: ""
 url: ""
 
-permalink: /articles/:title
+permalink: articles/:title
 
 # Build settings
 markdown: kramdown
@@ -31,3 +32,5 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - contrib/
+  - readme.md
