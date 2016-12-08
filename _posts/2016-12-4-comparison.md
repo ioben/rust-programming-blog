@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Comparison
-date: 2016-01-01 12:07:00
+date: 2016-01-01 12:06:02
 ---
 
 A comparison of Rust and other programming languages can be found in the table below.

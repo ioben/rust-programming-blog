@@ -4,7 +4,7 @@ title: Structs, Enums, Traits, and Implementations
 date: 2016-01-01 12:02:00
 ---
 
-Rust isn't OOP, functional, or imperative; it's a little of all three!  Because of this Rust's structure is a little different than anything you may have seen before.
+Rust isn't functional or imperative; it's a little of both!  Because of this Rust's structure is a little different than anything you may have seen before.
 
 <!--more-->
 
@@ -68,7 +68,7 @@ fn main() {
     Color::CMYK(c, m, y, k) => println!("C: {}, M: {}, Y: {}, K: {}", c, m, y, k),
   };
 
-  if let Color::RGB(r, g, b) = color {
+  if let Color::RGB(r, g, b) = white {
     println!("R: {}, G: {}, B: {}", r, g, b);
   }
 }
@@ -147,7 +147,7 @@ impl Display for Message {
 }
 
 fn main() {
-  let message = Message(String::from("blah"));
+  let message = Message(String::from("A Message"));
 
   println!("{}", message);
 }
